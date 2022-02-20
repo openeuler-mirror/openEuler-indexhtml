@@ -2,7 +2,7 @@
 
 Name:        %{vendor}-indexhtml
 Version:     7
-Release:     14
+Release:     15
 Source:      HTML.tar.gz
 License:     CC-BY-SA
 Summary:     Browser default start page for %{vendor}
@@ -45,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/HTML/*
 
 %changelog
+* Tue Feb 15 2022 YukariChiba <i@0x7f.cc> - 7-15
+- Compress HTML to tar.gz to avoid build failure.
+
 * Mon Dec 23 2019 openEuler Buildteam <buildteam@openeuler.org> - 7-14
 - Type:NA
 - ID:NA
